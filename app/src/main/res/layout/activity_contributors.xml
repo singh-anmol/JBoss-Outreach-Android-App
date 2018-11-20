@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".Contributors">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimaryLight"
+		android:orientation="vertical"
+		android:paddingTop="4dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="55dp"
+			android:orientation="horizontal"
+			android:padding="7dp">
+
+			<ImageView
+				android:layout_width="23dp"
+				android:layout_height="23dp"
+				android:layout_gravity="center"
+				android:layout_marginStart="7dp"
+				android:src="@drawable/ic_about"
+				android:tint="@color/colorPrimary" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="2dp"
+					android:text="Displaying Contributors Of GitHub Repo"
+					android:textColor="@color/colorPrimary"
+					android:textSize="12sp" />
+
+				<TextView
+					android:id="@+id/viewed_repo_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/repo_name"
+					android:text="Repo Name"
+					android:textColor="@color/colorPrimary"
+					android:textSize="15sp"
+					android:textStyle="bold" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<include
+		android:id="@+id/layout_no_internet"
+		layout="@layout/layout_no_internet"
+		android:visibility="gone" />
+
+	<include
+		android:id="@+id/fetching_data"
+		layout="@layout/fetching_data"
+		android:visibility="visible" />
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/collaborator_recycler_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone" />
+
+</LinearLayout>
