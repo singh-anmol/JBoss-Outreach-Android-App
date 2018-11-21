@@ -3,7 +3,7 @@ Android App to fetch and display JBoss Outreach's GitHub Repositories via GitHub
 > This app was developed as a part of Google Code-In 2018 task.
 
 # Video Demo
-Will be added soon
+https://www.youtube.com/watch?v=8zNN2USHX7g
 
 # Libraries Used
 1. https://github.com/google/volley
