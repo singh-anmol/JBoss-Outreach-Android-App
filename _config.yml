@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: "JBoss Outreach"
+description: "Android App to fetch and Display JBoss Outreach's GitHub Repositories via GitHub API"
+logo: "https://raw.githubusercontent.com/singh-anmol/JBoss-Outreach-Android-App/master/app/src/main/ic_launcher-web.png"
+show_downloads: "true"
